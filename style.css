@@ -1,0 +1,38 @@
+.table-container {
+    margin: 250px;
+    width: fit-content;
+    max-width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  .header-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .body-scroll {
+    max-height: 200px;
+    overflow-y: scroll;
+    /* Compensate for the scrollbar width */
+    padding-right: 17px; /* Usually 17px, but adjust if needed for your browser */
+    box-sizing: content-box;
+  }
+  
+  .body-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    min-width: 100px;
+    background: white;
+  }
+  
+  .scrollbar-space {
+    width: 17px; /* Adjust to scrollbar width */
+    background: white;
+    border: none;
+  }
