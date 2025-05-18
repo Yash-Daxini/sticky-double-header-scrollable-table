@@ -4,56 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fixed Sticky Header Table</title>
-    <style>
-      .table-container {
-        margin: 250px;
-        max-height: 250px;
-        overflow: auto;
-        border: 1px solid #ccc;
-      }
-
-      table {
-        border-collapse: separate; /* Important fix */
-        border-spacing: 0;
-        width: 100%;
-        min-width: 700px;
-      }
-
-      th,
-      td {
-        border: 1px solid #999;
-        padding: 8px;
-        text-align: center;
-        background-color: white;
-      }
-
-      thead tr:first-child th {
-        position: sticky;
-        top: 0;
-        height: 40px;
-        background: #f1f1f1;
-        z-index: 3;
-        border-bottom: 2px solid #ccc;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      thead tr:nth-child(2) th {
-        position: sticky;
-        top: 60px; /* Same as the height of the first sticky row */
-        height: 40px;
-        background: #fafafa;
-        z-index: 2;
-        border-bottom: 2px solid #ddd;
-      }
-
-      th[rowspan] {
-        vertical-align: middle;
-      }
-
-      tbody td {
-        background-color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="table-container">

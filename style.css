@@ -1,38 +1,54 @@
 .table-container {
     margin: 250px;
-    width: fit-content;
-    max-width: 100%;
+    max-height: 250px;
+    overflow: auto;
     border: 1px solid #ccc;
   }
-  
-  .header-table {
-    border-collapse: collapse;
+
+  table {
+    /* border-collapse: separate; */
+    border-spacing: 0;
     width: 100%;
+    min-width: 700px;
   }
-  
-  .body-scroll {
-    max-height: 200px;
-    overflow-y: scroll;
-    /* Compensate for the scrollbar width */
-    padding-right: 17px; /* Usually 17px, but adjust if needed for your browser */
-    box-sizing: content-box;
-  }
-  
-  .body-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
+
+  th,
+  td {
+    border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    min-width: 100px;
-    background: white;
+    background-color: white;
   }
-  
-  .scrollbar-space {
-    width: 17px; /* Adjust to scrollbar width */
-    background: white;
-    border: none;
+
+  thead tr:first-child th {
+    position: sticky;
+    top: 0;
+    height: 40px;
+    background: #f1f1f1;
+    z-index: 3;
+  }
+
+  thead tr:first-child th:first-child {
+    position: sticky;
+    top: -3px;
+    height: 40px;
+    background: #f1f1f1;
+    z-index: 3;
+    border-top: 1px solid #ddd;
+  }
+
+  thead tr:nth-child(2) th {
+    position: sticky;
+    top: 55px;
+    height: 40px;
+    background: #fafafa;
+    z-index: 2;
+  }
+
+  th[rowspan] {
+    vertical-align: middle;
+  }
+
+  tbody td {
+    background-color: #fff;
   }
